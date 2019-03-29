@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,700');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-family: 'Catamaran', sans-serif;
+}
+
+header {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #c3bfff;
+    box-shadow: 0 1px 10px rgba(0, 2, 100, 0.8);
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+}
+
+.header-text {
+    margin: auto;
+    width: 60%;
+}
+
+.header-text a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffffff;
+    text-shadow: 0px 0.5px 0.5px rgb(83, 83, 83);
+    margin-bottom: 10px;
+}
+
+main.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.daily-task {
+    flex-basis: 900px;
+    margin-bottom: 25px;
+}
+
+.weekly-task,
+.monthly-task {
+    flex-basis: calc(900px/2);
+}
+
+.header {
+    position: relative;
+    padding: 10px;
+}
+
+div.header.one {
+    background:linear-gradient(135deg, #ffe8a9a9 0%,#f58dff 100%);
+}
+
+div.header.two {
+    background:linear-gradient(135deg, #ffe8a9a9 0%,#c28dff 100%);
+}
+
+div.header.three {
+    background:linear-gradient(135deg, #ffe8a9a9 0%,#ff7480 100%);
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+
+button {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    text-transform: lowercase;
+    background-color: white;
+    color: #333333;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    color: #737cff;
+}
+
+div.box-numbers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.task {
+    display: flex;
+    margin: 3px 0;
+}
+
+span.label {
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+    height: 25px;
+    min-width: 20.5px;
+    margin: 3px 1.1px;
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid rgba(175, 175, 175, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    user-select: none;
+}
+
+input.text {
+    margin: 3px 0px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.2);
+    color: rgb(37, 37, 37);
+    border: none;
+}
+
+#daily,
+#weekly,
+#monthly {
+    display: none;
+}
